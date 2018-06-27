@@ -5,7 +5,7 @@
     <classes>
       <class name="com.org.rayban.DemoTest">
         <methods>
-          <include name="logout"/>
+          <include name="successfullLogin"/>
         </methods>
       </class> <!-- com.org.rayban.DemoTest -->
     </classes>
