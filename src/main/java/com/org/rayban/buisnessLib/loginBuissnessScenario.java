@@ -38,7 +38,7 @@ public class loginBuissnessScenario {
 	
 	
 	public void validateLoginSuccessful() {
-		String expectedResult = "Learn Git and GitHub without any code";
+		String expectedResult = "Learn Git and GitHub without any code!";
 		String actualResult = Driver.driver.findElement(By.xpath("//h2[text()='Learn Git and GitHub without any code!']")).getText();
 		Assert.assertEquals(actualResult, expectedResult, "validation failed");
 	}
