@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24241" started-at="2018-06-29T05:13:58Z" finished-at="2018-06-29T05:14:22Z">
+  <suite name="Suite" duration-ms="23411" started-at="2018-07-04T05:47:18Z" finished-at="2018-07-04T05:47:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24241" started-at="2018-06-29T05:13:58Z" finished-at="2018-06-29T05:14:22Z">
+    <test name="Test" duration-ms="23411" started-at="2018-07-04T05:47:18Z" finished-at="2018-07-04T05:47:42Z">
       <class name="com.org.rayban.DemoTest">
-        <test-method status="PASS" signature="navigateToLoginPagae()[pri:0, instance:com.org.rayban.DemoTest@6f1fba17]" name="navigateToLoginPagae" duration-ms="18406" started-at="2018-06-29T05:13:58Z" finished-at="2018-06-29T05:14:17Z">
+        <test-method status="PASS" signature="navigateToLoginPage()[pri:0, instance:com.org.rayban.DemoTest@78cd163b]" name="navigateToLoginPage" duration-ms="18988" started-at="2018-07-04T05:47:18Z" finished-at="2018-07-04T05:47:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateToLoginPagae -->
-        <test-method status="PASS" signature="successfullLogin()[pri:0, instance:com.org.rayban.DemoTest@6f1fba17]" name="successfullLogin" duration-ms="5792" started-at="2018-06-29T05:14:17Z" finished-at="2018-06-29T05:14:22Z">
+        </test-method> <!-- navigateToLoginPage -->
+        <test-method status="PASS" signature="successfullLogin()[pri:0, instance:com.org.rayban.DemoTest@78cd163b]" name="successfullLogin" duration-ms="4165" started-at="2018-07-04T05:47:37Z" finished-at="2018-07-04T05:47:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successfullLogin -->
       </class> <!-- com.org.rayban.DemoTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
