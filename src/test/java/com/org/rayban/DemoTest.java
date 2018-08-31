@@ -1,5 +1,9 @@
 package com.org.rayban;
 
+import java.net.MalformedURLException;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.org.rayban.buisnessLib.loginBuissnessScenario;
@@ -10,15 +14,29 @@ public class DemoTest extends MyListners{
 
 	loginBuissnessScenario lb = new loginBuissnessScenario();
 	
-	@Test
-	public void navigateToLoginPage() throws InterruptedException {
-		lb.clickOnSignInButton();
+	@BeforeTest
+	
+	public void lunchingBrowser() throws MalformedURLException {
+	Driver.browserType();
+		
+	}
+	
+	@BeforeMethod
+	public void lunchingSignInPage() {
+	Driver.driver.get("https://github.com/");
+	}
+	
+	
+	//@Test
+	public void navigateToLoginPage() throws InterruptedException, MalformedURLException {
+	lb.clickOnSignInButton();
 	}
 	
 	
 	@Test
 	
-	public void successfullLogin() {
+	public void successfullLogin() throws MalformedURLException, InterruptedException{
+	lb.clickOnSignInButton();	
 	lb.	loginToGitApp(); 
 	lb.	validateLoginSuccessful();
     Driver.driver.quit();

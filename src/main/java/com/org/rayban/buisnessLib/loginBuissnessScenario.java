@@ -1,5 +1,7 @@
 package com.org.rayban.buisnessLib;
 
+import java.net.MalformedURLException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -14,9 +16,8 @@ public class loginBuissnessScenario {
 	loginPage login = PageFactory.initElements(Driver.driver, loginPage.class);
 	
 	
-	public void clickOnSignInButton() throws InterruptedException {
-		Driver.browserType();
-		Driver.driver.get("https://github.com/");
+	public void clickOnSignInButton() throws InterruptedException, MalformedURLException {
+		
 		//WebElement elb = login.getSignInButton();
 		WebDriverWait wait = new WebDriverWait(Driver.driver, 180);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[text()='Sign in']")));
@@ -28,6 +29,8 @@ public class loginBuissnessScenario {
 	    }
 	
 	public void loginToGitApp() {
+		WebDriverWait wait = new WebDriverWait(Driver.driver, 180);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='login_field']")));
 		Driver.driver.findElement(By.xpath("//input[@id='login_field']")).sendKeys("satyajit12");
 		Driver.driver.findElement(By.xpath("//input[@id='password']")).sendKeys("mami@789");
 		Driver.driver.findElement(By.xpath("//input[@value='Sign in']")).click();
@@ -36,6 +39,9 @@ public class loginBuissnessScenario {
 	
 	
 	public void validateLoginSuccessful() {
+		WebDriverWait wait = new WebDriverWait(Driver.driver, 180);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h2[text()='Learn Git and GitHub without any code!']")));
+		
 		String expectedResult = "Learn Git and GitHub without any code!";
 		String actualResult = Driver.driver.findElement(By.xpath("//h2[text()='Learn Git and GitHub without any code!']")).getText();
 		Assert.assertEquals(actualResult, expectedResult, "validation failed");
