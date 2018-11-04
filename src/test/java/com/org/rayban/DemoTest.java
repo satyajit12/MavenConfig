@@ -24,6 +24,7 @@ public class DemoTest extends MyListners{
 	@BeforeMethod
 	public void lunchingSignInPage() {
 	Driver.driver.get("https://github.com/");
+	System.out.println("Application Is Lunched");
 	}
 	
 	
