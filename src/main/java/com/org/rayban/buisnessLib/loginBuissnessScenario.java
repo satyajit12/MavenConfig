@@ -20,10 +20,10 @@ public class loginBuissnessScenario {
 		
 		//WebElement elb = login.getSignInButton();
 		WebDriverWait wait = new WebDriverWait(Driver.driver, 180);
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[text()='Sign in']")));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[div[@class='d-lg-flex mr-lg-3 mb-3 mb-lg-0']]/a[1]")));
 		//Thread.sleep(10000);
-				
-		Driver.driver.findElement(By.xpath("//a[text()='Sign in']")).click();
+		Driver.driver.findElement(By.xpath("//div[div[@class='d-lg-flex mr-lg-3 mb-3 mb-lg-0']]/a[1]")).click();		
+		//Driver.driver.findElement(By.xpath("//a[text()='Sign-in']")).click();
 		//login.getSignInButton().click();
 	
 	    }
@@ -50,8 +50,8 @@ public class loginBuissnessScenario {
 	
 	public void logout() {
 		WebDriverWait wait = new WebDriverWait(Driver.driver, 240);
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//ul[@id='user-links']/li[3]")));
-		Driver.driver.findElement(By.xpath("//ul[@id='user-links']/li[3]")).click();
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='dropdown-caret']")));
+		Driver.driver.findElement(By.xpath("//span[@class='dropdown-caret']")).click();
 		Driver.driver.findElement(By.xpath("//button[contains(text(),'Sign out')]")).click();
 		
 	}

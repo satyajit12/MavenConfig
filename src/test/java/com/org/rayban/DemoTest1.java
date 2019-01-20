@@ -21,7 +21,7 @@ public class DemoTest1 extends MyListners{
 	
     @BeforeTest
 	
-	public void lunchingBrowser() throws MalformedURLException {
+	public void lunchingBrowser() throws MalformedURLException, InterruptedException {
 	Driver.browserType();
 		
 	}

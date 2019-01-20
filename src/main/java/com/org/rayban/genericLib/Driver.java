@@ -14,14 +14,15 @@ public class Driver {
 	
 	public static WebDriver driver;
 	
-	public static void browserType() throws MalformedURLException {
-   /*System.setProperty("webdriver.gecko.driver", "F:\\Newworkspace\\mavenHybridFramework\\Drivers\\geckodriver.exe");
+	public static void browserType() throws MalformedURLException, InterruptedException {
+    System.setProperty("webdriver.gecko.driver", "F:\\Newworkspace\\mavenHybridFramework\\Drivers\\geckodriver.exe");
 	driver = new FirefoxDriver();
-	driver.manage().window().maximize();*/
-	
-	System.setProperty("webdriver.chrome.driver", "F:\\Newworkspace\\mavenHybridFramework\\Drivers\\chromedriver.exe");
-	driver = new ChromeDriver();
 	driver.manage().window().maximize();
+	Thread.sleep(3000);
+	
+	/*System.setProperty("webdriver.chrome.driver", "F:\\Newworkspace\\mavenHybridFramework\\Drivers\\chromedriver.exe");
+	driver = new ChromeDriver();
+	driver.manage().window().maximize();*/
 	
 	/*System.out.println("Remote Driver started");
 	System.setProperty("webdriver.chrome.driver", "F:\\Newworkspace\\mavenHybridFramework\\Drivers\\chromedriver.exe");
