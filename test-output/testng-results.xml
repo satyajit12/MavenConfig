@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23741" started-at="2019-01-20T12:40:34Z" finished-at="2019-01-20T12:40:57Z">
+  <suite name="Suite" duration-ms="27656" started-at="2019-01-20T14:41:25Z" finished-at="2019-01-20T14:41:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23741" started-at="2019-01-20T12:40:34Z" finished-at="2019-01-20T12:40:57Z">
+    <test name="Test" duration-ms="27656" started-at="2019-01-20T14:41:25Z" finished-at="2019-01-20T14:41:53Z">
       <class name="com.org.rayban.DemoTest">
-        <test-method status="PASS" signature="lunchingBrowser()[pri:0, instance:com.org.rayban.DemoTest@6536e911]" name="lunchingBrowser" is-config="true" duration-ms="13110" started-at="2019-01-20T12:40:34Z" finished-at="2019-01-20T12:40:47Z">
+        <test-method status="PASS" signature="lunchingBrowser()[pri:0, instance:com.org.rayban.DemoTest@6536e911]" name="lunchingBrowser" is-config="true" duration-ms="15610" started-at="2019-01-20T14:41:26Z" finished-at="2019-01-20T14:41:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lunchingBrowser -->
-        <test-method status="PASS" signature="lunchingSignInPage()[pri:0, instance:com.org.rayban.DemoTest@6536e911]" name="lunchingSignInPage" is-config="true" duration-ms="5218" started-at="2019-01-20T12:40:47Z" finished-at="2019-01-20T12:40:52Z">
+        <test-method status="PASS" signature="lunchingSignInPage()[pri:0, instance:com.org.rayban.DemoTest@6536e911]" name="lunchingSignInPage" is-config="true" duration-ms="3771" started-at="2019-01-20T14:41:41Z" finished-at="2019-01-20T14:41:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lunchingSignInPage -->
-        <test-method status="PASS" signature="successfullLogin()[pri:0, instance:com.org.rayban.DemoTest@6536e911]" name="successfullLogin" duration-ms="5382" started-at="2019-01-20T12:40:52Z" finished-at="2019-01-20T12:40:57Z">
+        <test-method status="PASS" signature="successfullLogin()[pri:0, instance:com.org.rayban.DemoTest@6536e911]" name="successfullLogin" duration-ms="7906" started-at="2019-01-20T14:41:45Z" finished-at="2019-01-20T14:41:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successfullLogin -->
       </class> <!-- com.org.rayban.DemoTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

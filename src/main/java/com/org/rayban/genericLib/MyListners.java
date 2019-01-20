@@ -27,12 +27,12 @@ public class MyListners implements ITestListener {
 	public void onFinish(ITestContext context) {
 		
 		  System.out.println("on finish");
- reports.endTest(test);
+          reports.endTest(test);
 		  reports.flush();
 	
 		
 	}
-	public void onStart(ITestContext context) {
+	     public void onStart(ITestContext context) {
 		 reports = new ExtentReports(new SimpleDateFormat("YYYY-MM-dd hh-mm-ss-ms").format(new Date()) + "reports.html");
 		 
 		
