@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.org.rayban.DemoTest">
+      <class name="com.org.rayban.amazonLoginTest">
         <methods>
-          <include name="lunchingSignInPage"/>
-          <include name="logout"/>
-          <include name="lunchingBrowser"/>
+          <include name="successfullLoginAmazon"/>
         </methods>
-      </class> <!-- com.org.rayban.DemoTest -->
+      </class> <!-- com.org.rayban.amazonLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

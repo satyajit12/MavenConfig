@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="27656" started-at="2019-01-20T14:41:25Z" finished-at="2019-01-20T14:41:53Z">
+  <suite name="Suite" duration-ms="3634" started-at="2019-11-24T05:11:36Z" finished-at="2019-11-24T05:11:39Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="27656" started-at="2019-01-20T14:41:25Z" finished-at="2019-01-20T14:41:53Z">
-      <class name="com.org.rayban.DemoTest">
-        <test-method status="PASS" signature="lunchingBrowser()[pri:0, instance:com.org.rayban.DemoTest@6536e911]" name="lunchingBrowser" is-config="true" duration-ms="15610" started-at="2019-01-20T14:41:26Z" finished-at="2019-01-20T14:41:41Z">
+    <test name="Test" duration-ms="3634" started-at="2019-11-24T05:11:36Z" finished-at="2019-11-24T05:11:39Z">
+      <class name="com.org.rayban.amazonLoginTest">
+        <test-method status="PASS" signature="amazonPageTitle()[pri:0, instance:com.org.rayban.amazonLoginTest@6fa51cd4]" name="amazonPageTitle" duration-ms="44" started-at="2019-11-24T05:11:36Z" finished-at="2019-11-24T05:11:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- lunchingBrowser -->
-        <test-method status="PASS" signature="lunchingSignInPage()[pri:0, instance:com.org.rayban.DemoTest@6536e911]" name="lunchingSignInPage" is-config="true" duration-ms="3771" started-at="2019-01-20T14:41:41Z" finished-at="2019-01-20T14:41:45Z">
+        </test-method> <!-- amazonPageTitle -->
+        <test-method status="PASS" signature="successfullLoginAmazon()[pri:0, instance:com.org.rayban.amazonLoginTest@6fa51cd4]" name="successfullLoginAmazon" duration-ms="3401" started-at="2019-11-24T05:11:36Z" finished-at="2019-11-24T05:11:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- lunchingSignInPage -->
-        <test-method status="PASS" signature="successfullLogin()[pri:0, instance:com.org.rayban.DemoTest@6536e911]" name="successfullLogin" duration-ms="7906" started-at="2019-01-20T14:41:45Z" finished-at="2019-01-20T14:41:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- successfullLogin -->
-      </class> <!-- com.org.rayban.DemoTest -->
+        </test-method> <!-- successfullLoginAmazon -->
+      </class> <!-- com.org.rayban.amazonLoginTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
