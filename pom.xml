@@ -13,8 +13,6 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
  
-  
-  
   <build>
   <plugins>
   
@@ -32,10 +30,13 @@
   </plugins>
   </build>
   
+  
+  
  
  
  
 <dependencies>
+   
     <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>

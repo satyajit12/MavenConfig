@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="3634" started-at="2019-11-24T05:11:36Z" finished-at="2019-11-24T05:11:39Z">
+  <suite name="Suite" duration-ms="5496" started-at="2019-11-24T11:36:32Z" finished-at="2019-11-24T11:36:37Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="3634" started-at="2019-11-24T05:11:36Z" finished-at="2019-11-24T05:11:39Z">
+    <test name="Test" duration-ms="5496" started-at="2019-11-24T11:36:32Z" finished-at="2019-11-24T11:36:37Z">
       <class name="com.org.rayban.amazonLoginTest">
-        <test-method status="PASS" signature="amazonPageTitle()[pri:0, instance:com.org.rayban.amazonLoginTest@6fa51cd4]" name="amazonPageTitle" duration-ms="44" started-at="2019-11-24T05:11:36Z" finished-at="2019-11-24T05:11:36Z">
+        <test-method status="PASS" signature="amazonPageTitle()[pri:0, instance:com.org.rayban.amazonLoginTest@6fa51cd4]" name="amazonPageTitle" duration-ms="30" started-at="2019-11-24T11:36:32Z" finished-at="2019-11-24T11:36:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amazonPageTitle -->
-        <test-method status="PASS" signature="successfullLoginAmazon()[pri:0, instance:com.org.rayban.amazonLoginTest@6fa51cd4]" name="successfullLoginAmazon" duration-ms="3401" started-at="2019-11-24T05:11:36Z" finished-at="2019-11-24T05:11:39Z">
+        <test-method status="PASS" signature="successfullLoginAmazon()[pri:0, instance:com.org.rayban.amazonLoginTest@6fa51cd4]" name="successfullLoginAmazon" duration-ms="5239" started-at="2019-11-24T11:36:32Z" finished-at="2019-11-24T11:36:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successfullLoginAmazon -->
