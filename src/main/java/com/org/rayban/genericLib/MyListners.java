@@ -8,6 +8,7 @@ import java.util.Date;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -17,11 +18,12 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class MyListners implements ITestListener {
+public class MyListners  implements ITestListener {
+	
 	
 	protected static ExtentReports reports;
 	protected static ExtentTest test;
-	
+	private WebDriver driver;
 	
 	
 	public void onFinish(ITestContext context) {
@@ -32,8 +34,8 @@ public class MyListners implements ITestListener {
 	
 		
 	}
-	     public void onStart(ITestContext context) {
-		 reports = new ExtentReports(new SimpleDateFormat("YYYY-MM-dd hh-mm-ss-ms").format(new Date()) + "reports.html");
+	    public void onStart(ITestContext context) {
+		 reports = new ExtentReports(new SimpleDateFormat("YYYY-MM-dd--- hh-mm-ss-ms").format(new Date()) + "reports.html");
 		 
 		
 	}
@@ -47,8 +49,8 @@ public class MyListners implements ITestListener {
 	
 	public void onTestFailure(ITestResult result) {
 		System.out.println("on test failed");
-	    test.log(LogStatus.SKIP, result.getMethod().getMethodName() + "test is failed");
-	    TakesScreenshot ts =  (TakesScreenshot) Driver.driver; 
+	    test.log(LogStatus.FAIL, result.getMethod().getMethodName() + "test is failed");
+	    TakesScreenshot ts =  (TakesScreenshot) driver; 
 	    File src = ts.getScreenshotAs(OutputType.FILE);
 	    
 	   
